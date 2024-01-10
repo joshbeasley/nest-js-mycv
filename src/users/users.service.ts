@@ -9,12 +9,14 @@ export class UsersService {
 
   constructor(
     @InjectRepository(User)
-    private usersRepository: Repository<User>,
+    private repo: Repository<User>,
   ) {}
 
-  // create(body: CreateUserDto){
-  //   this.usersRepository.create(body)
-  // }
+  create(email: string, password: string){
+    const user = this.repo.create({email, password})
+
+    return this.repo.save(user)
+  }
 
   // findOne(id: number){
   //   return this.usersRepository.findOneBy({ id })
