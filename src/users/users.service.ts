@@ -18,13 +18,13 @@ export class UsersService {
     return this.repo.save(user)
   }
 
-  // findOne(id: number){
-  //   return this.usersRepository.findOneBy({ id })
-  // }
+  findOne(id: number){
+    return this.repo.findOneBy({ id })
+  }
 
-  // find(email: string){
-  //   return this.usersRepository.findBy({ email })
-  // }
+  find(email: string){
+    return this.repo.find({ where: { email } })
+  }
 
   // update(body: CreateUserDto){
   //   this.usersRepository.update()
