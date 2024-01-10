@@ -1,4 +1,32 @@
 import { Injectable } from '@nestjs/common';
+import { InjectRepository } from '@nestjs/typeorm';
+import { User } from './user.entity';
+import { Repository } from 'typeorm';
+import { CreateUserDto } from './dtos/create-user.dto';
 
 @Injectable()
-export class UsersService {}
+export class UsersService {
+
+  constructor(
+    @InjectRepository(User)
+    private usersRepository: Repository<User>,
+  ) {}
+
+  // create(body: CreateUserDto){
+  //   this.usersRepository.create(body)
+  // }
+
+  // findOne(id: number){
+  //   return this.usersRepository.findOneBy({ id })
+  // }
+
+  // find(email: string){
+  //   return this.usersRepository.findBy({ email })
+  // }
+
+  // update(body: CreateUserDto){
+  //   this.usersRepository.update()
+  // }
+
+  remove(){}
+}
