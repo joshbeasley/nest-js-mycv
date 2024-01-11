@@ -1,5 +1,13 @@
-# signup
+### signup
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
 
+{
+  "email": "asdfe@email.com",
+  "password": "asdf"
+}
+
+### signin
 POST http://localhost:3000/auth/signin
 Content-Type: application/json
 
@@ -25,13 +33,5 @@ Content-Type: application/json
   "email": "asdf@email.com"
 }
 
-# sign in
-POST http://localhost:3000/auth/signin
-Content-Type: application/json
-
-{
-  "email": "asdfe@email.com",
-  "password": "asdf"
-}
 
 
