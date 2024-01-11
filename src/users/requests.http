@@ -33,5 +33,6 @@ Content-Type: application/json
   "email": "asdf@email.com"
 }
 
-
+### Get signed in user
+GET http://localhost:3000/auth/whoami
 
