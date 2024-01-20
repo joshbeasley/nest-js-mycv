@@ -26,7 +26,7 @@ const cookieSession = require('cookie-session')
           entities: [User, Report]
         }
       }
-    })
+    }),
     // TypeOrmModule.forRoot({
     //   type: 'sqlite',
     //   database: 'db.sqlite',
