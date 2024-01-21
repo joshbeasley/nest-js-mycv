@@ -28,8 +28,8 @@ export class CreateReportDto {
   @IsLongitude()
   lng: number
 
-  @IsLatitude()
   @IsNumber()
+  @IsLatitude()
   lat: number
 
   @IsNumber()
