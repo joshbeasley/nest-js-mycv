@@ -11,7 +11,7 @@ Content-Type: application/json
   "price": 500000
 }
 ###
-PATCH http://localhost:3000/reports/4
+PATCH http://localhost:3000/reports/1
 Content-Type: application/json
 
 {
